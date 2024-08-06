@@ -1,0 +1,10 @@
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\bin\Debug\Wielowątkowosc.exe.config
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\bin\Debug\Wielowątkowosc.exe
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\bin\Debug\Wielowątkowosc.pdb
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\obj\Debug\Wielowątkowosc.csproj.AssemblyReference.cache
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\obj\Debug\Wielowątkowosc.Form1.resources
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\obj\Debug\Wielowątkowosc.Properties.Resources.resources
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\obj\Debug\Wielowątkowosc.csproj.GenerateResource.cache
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\obj\Debug\Wielowątkowosc.csproj.CoreCompileInputs.cache
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\obj\Debug\Wielowątkowosc.exe
+C:\Users\turte\Desktop\zadania\Wielowątkowosc\Wielowątkowosc\obj\Debug\Wielowątkowosc.pdb
