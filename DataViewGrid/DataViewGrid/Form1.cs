@@ -37,6 +37,7 @@ namespace DataViewGrid
             dataGridView1.Rows[0].ReadOnly = true;
 
             dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
+            dataGridView1.RowsRemoved += dataGridView1_RowDeleted;
         }
         private void Suma()
         {
@@ -84,11 +85,11 @@ namespace DataViewGrid
         {
             if(int.TryParse(input, out int numer))
             {
-                for(int r = 1; r < dataGridView1.RowCount; r++)
+                foreach (DataGridViewCell cell in dataGridView1.SelectedCells)
                 {
-                    for(int c = 0; c < dataGridView1.ColumnCount; c++)
+                    if(cell.RowIndex != 0)
                     {
-                        dataGridView1.Rows[r].Cells[c].Value = numer;
+                        cell.Value = numer;
                     }
                 }
             }
@@ -102,9 +103,12 @@ namespace DataViewGrid
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_RowDeleted(object sender, DataGridViewRowsRemovedEventArgs e)
         {
-            
+            if (e.RowIndex > 0)
+            {
+                Suma();
+            }
         }
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
