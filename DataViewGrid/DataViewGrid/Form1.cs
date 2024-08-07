@@ -20,6 +20,8 @@ namespace DataViewGrid
         }
         private void Podstawa()
         {
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(Popup);
             dataGridView1.ColumnCount = 4;
             dataGridView1.Columns[0].Name = "A";
             dataGridView1.Columns[1].Name = "B";
@@ -51,16 +53,53 @@ namespace DataViewGrid
                         }
                     }
                 }
-                //if sum > 1000 blad ma sie wyswietlic
-                dataGridView1.Rows[0].Cells[c].Value = sum;
+                if (sum >= 0 && sum <= 1000)
+                {
+                    dataGridView1.Rows[0].Cells[c].Value = sum;
+                }
+                else
+                {
+                    dataGridView1.Rows[0].Cells[c].Value = "blad";
+                }
             }
         }
-        public void Okno()
+        private void Okno()
         {
-            Form prompt = new Form();
+            Form prompt1 = new Form();
             {
-
+                prompt1.Width = 300;
+                prompt1.Height = 200;
             };
+            Label textLabel = new Label() { Left = 25, Top = 25, Text = "podaj numer: " };
+            TextBox inputBox = new TextBox() { Left = 40, Top = 80, Width = 100};
+            Button potwierdz = new Button() { Text = "OK", Left = 50, Top = 100, Width = 30 };
+            potwierdz.Click += (sender, e) => { WypelnijTabele(inputBox.Text); prompt1.Close(); };
+
+            prompt1.Controls.Add(textLabel);
+            prompt1.Controls.Add(inputBox);
+            prompt1.Controls.Add(potwierdz);
+            prompt1.ShowDialog();
+        }
+        public void WypelnijTabele(string input)
+        {
+            if(int.TryParse(input, out int numer))
+            {
+                for(int r = 1; r < dataGridView1.RowCount; r++)
+                {
+                    for(int c = 0; c < dataGridView1.ColumnCount; c++)
+                    {
+                        dataGridView1.Rows[r].Cells[c].Value = numer;
+                    }
+                }
+            }
+            Suma();
+        }
+        public void Popup(object sender, KeyEventArgs e)
+        {
+            if(e.Control && e.KeyCode == Keys.E)
+            {
+                Okno();
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

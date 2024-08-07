@@ -20,8 +20,8 @@ namespace Wielowątkowosc
         public void Komponenty()
         {
             button1.Text = "Generuj";
-            listBox1.Items.AddRange(new object[] { "3", "4", "5", "6" });
-            listBox1.ScrollAlwaysVisible = true;   
+            numericUpDown1.Minimum = 3;
+            numericUpDown1.Maximum = 6;
             listBox2.ScrollAlwaysVisible = true;
             label1.Text = "Progres: 0/1000";
             label2.Text = "Długość permutacji";
@@ -29,7 +29,7 @@ namespace Wielowątkowosc
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            int wybranyElement =  int.Parse(listBox1.SelectedItem.ToString());
+            var wybranyElement =  int.Parse(numericUpDown1.Value.ToString());
             int maksymalnaWielkoscPermutacji = WielkoscPermutacji(wybranyElement);
 
             progressBar1.Maximum = maksymalnaWielkoscPermutacji;
@@ -51,7 +51,6 @@ namespace Wielowątkowosc
         }
         private void WykonaniePermutacji(int[] permutacjaa)
         {
-                button1.Enabled = false;
                 int index = permutacjaa.Length - 1;
                 while (index >= 0)
                 {
@@ -63,6 +62,7 @@ namespace Wielowątkowosc
                     permutacjaa[index] = 0;
                     index--;
                 }
+                
             }
         private int WielkoscPermutacji(int element)
         {

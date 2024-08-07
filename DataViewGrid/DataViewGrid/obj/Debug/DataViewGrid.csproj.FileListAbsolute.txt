@@ -8,3 +8,13 @@ C:\Users\turte\Desktop\zadania\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.
 C:\Users\turte\Desktop\zadania\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.csproj.CoreCompileInputs.cache
 C:\Users\turte\Desktop\zadania\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.exe
 C:\Users\turte\Desktop\zadania\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.pdb
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\bin\Debug\DataViewGrid.exe.config
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\bin\Debug\DataViewGrid.exe
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\bin\Debug\DataViewGrid.pdb
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.csproj.AssemblyReference.cache
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.Form1.resources
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.Properties.Resources.resources
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.csproj.GenerateResource.cache
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.csproj.CoreCompileInputs.cache
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.exe
+C:\Users\Praktykant\source\repos\test\DataViewGrid\DataViewGrid\obj\Debug\DataViewGrid.pdb
